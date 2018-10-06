@@ -172,6 +172,11 @@ type Query {
 
   """ Get profile information to session users """
   getSession: Session @cacheControl(scope: PRIVATE)
+
+  """ Get the Wish List informations by the received id """
+  getWishList(
+    id: String
+  ): WishList
 }
 
 type Mutation {
