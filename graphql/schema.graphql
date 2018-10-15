@@ -290,5 +290,7 @@ type Mutation {
   uploadAttachment(acronym: String!, documentId: ID!, field: String!, file: Upload!): AttachmentResponse
 
   """ WishList """
-  createWishList(wishList: WishListInput!): WishList
+  createWishList(wishList: WishListInput): WishList
+  updateWishList(id: ID!, wishList: WishListInput): WishList 
+  deleteWishList(id: ID!): WishList
 }
