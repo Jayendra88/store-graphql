@@ -287,4 +287,7 @@ type Mutation {
   createDocument(acronym: String!, document: DocumentInput): DocumentResponse
   updateDocument(acronym: String!, document: DocumentInput): DocumentResponse
   uploadAttachment(acronym: String!, documentId: ID!, field: String!, file: Upload!): AttachmentResponse
+
+  """ WishList """
+  createWishList(wishList: WishListInput!): WishList
 }
