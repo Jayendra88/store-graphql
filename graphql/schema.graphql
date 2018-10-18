@@ -295,4 +295,5 @@ type Mutation {
   deleteWishList(id: String!): WishList
   addWishListItem(listItem: ListItemInput): WishList
   deleteListItem(id: String!): ListItem
+  updateListItem(listId: String!, itemId: String!, quantity: Int!): WishList
 }
