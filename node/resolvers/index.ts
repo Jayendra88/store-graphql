@@ -8,7 +8,7 @@ import { mutations as documentMutations, queries as documentQueries } from './do
 import { queries as logisticsQueries } from './logistics'
 import { mutations as profileMutations, queries as profileQueries, rootResolvers as profileRootResolvers } from './profile'
 import { mutations as sessionMutations, queries as sessionQueries } from './session'
-import { queries as wishListQueries, mutation as wishListMutations } from './wishList'
+import { queries as listQueries, mutation as listMutations } from './list'
 
 // tslint:disable-next-line:no-var-requires
 Promise = require('bluebird')
@@ -25,7 +25,7 @@ export const resolvers = {
     ...authMutations,
     ...documentMutations,
     ...sessionMutations,
-    ...wishListMutations
+    ...listMutations
   },
   Query: {
     ...catalogQueries,
@@ -36,6 +36,6 @@ export const resolvers = {
     ...authQueries,
     ...logisticsQueries,
     ...sessionQueries,
-    ...wishListQueries
+    ...listQueries
   },
 }
