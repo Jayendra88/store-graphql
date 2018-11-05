@@ -242,6 +242,10 @@ export default async (
     }),
   })
 
+  if (!reducedAttachmentSchema) {
+    return ''
+  }
+
   const calculatedSchema = { ...schema, ...reducedAttachmentSchema }
 
   return JSON.stringify(calculatedSchema)
