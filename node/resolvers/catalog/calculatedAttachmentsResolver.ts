@@ -243,7 +243,7 @@ export default async (
   })
 
   if (!reducedAttachmentSchema) {
-    return ''
+    return '{}'
   }
 
   const calculatedSchema = { ...schema, ...reducedAttachmentSchema }
